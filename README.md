@@ -1,8 +1,10 @@
-# Izuko Bot - Versão Simplificada (Boruto)
+# VERSÃO DO BORUTO 1.5.0 ESPECIAL DE NATAL!
+
+![Banner Boruto Bot](banner.png)
 
 ## Descrição
 
-Esta é uma versão simplificada do **Izuko Bot VIP V3.0**, contendo apenas os comandos essenciais: **ping** e **ban**. O bot foi refatorado para utilizar uma estrutura de `switch/case` para o processamento de comandos, arquivos de configuração JSON para facilitar a personalização, e **suporte completo aos novos identificadores LID do WhatsApp**, além dos tradicionais JID.
+Esta é uma versão especial de natal do Boruto Uzumaki Bot, contendo Diversos comandos úteis e integrados de forma inavadora. O bot utiliza uma estrutura de `switch/case` para o processamento de comandos, arquivos de configuração JSON para facilitar a personalização, e **suporte completo aos novos identificadores LID do WhatsApp**, além dos tradicionais JID.
 
 ## Comandos Disponíveis
 
