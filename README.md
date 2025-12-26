@@ -37,6 +37,12 @@
 ### 📱 INSTALAÇÃO PARA TERMUX
 
 ```bash
+termux-setup-storage
+```
+
+> **⚠️ Aviso:** Se o comando acima não funcionar, conceda as permissões manualmente através das configurações do Android. Alguns dispositivos Android são limitados e restringem o acesso às permissões de armazenamento.
+
+```bash
 pkg update && pkg upgrade -y
 ```
 
