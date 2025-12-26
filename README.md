@@ -95,23 +95,28 @@ Este arquivo contém as configurações principais do bot:
 ```json
 {
   "prefix": "!",
-  "botName": "Izuko Bot",
-  "botNumber": "5528992777703",
-  "ownerNumber": "5528992777703",
-  "ownerName": "Mestre Lucky",
-  "version": "3.1.0",
-  "description": "Bot WhatsApp simplificado com comandos essenciais"
+  "botName": "Boruto Bot",
+  "botNumber": "NUMERO_DO_BOT@s.whatsapp.net",
+  "ownerNumber": "SEU_NUMERO@s.whatsapp.net",
+  "ownerName": "Mestre Ninja Tech</>",
+  "version": "1.5.0",
+  "description": "Bot WhatsApp MultiFuncional com Diveros comandos e sistemas.",
+  "wendelAI": {
+    "ativo": false,
+    "fotoUrl": "https://files.catbox.moe/0ssyj3.jpg"
+  }
 }
 ```
 
 **Campos:**
 - `prefix`: O prefixo usado para invocar comandos (ex: `!`, `.`, `/`)
 - `botName`: Nome do bot exibido nas mensagens
-- `botNumber`: Número do bot (apenas dígitos, sem formatação)
-- `ownerNumber`: Número do dono do bot (apenas dígitos, sem formatação)
+- `botNumber`: Número do bot com identificador WhatsApp
+- `ownerNumber`: Número do dono do bot com identificador WhatsApp
 - `ownerName`: Nome do dono do bot
 - `version`: Versão atual do bot
 - `description`: Descrição breve do bot
+- `wendelAI`: Configurações de integração com IA
 
 ### `settings/token_api-shizuko.json`
 
