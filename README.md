@@ -4,11 +4,24 @@
 
 ## Descrição
 
-Esta é uma versão especial de natal do Boruto Uzumaki Bot, contendo Diversos comandos úteis e integrados de forma inavadora. O bot utiliza uma estrutura de `switch/case` para o processamento de comandos, arquivos de configuração JSON para facilitar a personalização, e **suporte completo aos novos identificadores LID do WhatsApp**, além dos tradicionais JID.
+Esta é uma versão especial de natal do **Boruto Uzumaki Bot**, contendo diversos comandos úteis e integrados de forma inovadora. O bot utiliza uma estrutura de `switch/case` para o processamento de comandos, arquivos de configuração JSON para facilitar a personalização, e **suporte completo aos novos identificadores LID do WhatsApp**, além dos tradicionais JID.
 
-## Comandos Disponíveis
+## 🎮 Características Principais
 
-### 1. Comando `ping`
+- ✅ **+100 Comandos** incluindo brincadeiras e jogos
+- ✅ **Sistema de Relacionamentos** (namorar, casar, trair, terminar)
+- ✅ **Sistema de Ranking** para usuários mais ativos
+- ✅ **Sistema de Boas-vindas** personalizável
+- ✅ **Integração com IA** (WendelAI)
+- ✅ **Suporte a JID e LID** do WhatsApp
+- ✅ **Comandos de Administração** para grupos
+- ✅ **Comandos de Diversão** e entretenimento
+
+---
+
+## 📋 Comandos Disponíveis
+
+### Comando `ping`
 
 **Descrição:** Verifica a latência do bot e confirma que ele está online.
 
@@ -17,8 +30,6 @@ Esta é uma versão especial de natal do Boruto Uzumaki Bot, contendo Diversos c
 !ping
 ```
 
-**Aliases:** Nenhum
-
 **Exemplo de Resposta:**
 ```
 *[PING] Latência: 1.131s*
@@ -26,67 +37,57 @@ Esta é uma versão especial de natal do Boruto Uzumaki Bot, contendo Diversos c
 Viu só? Rápido como um raio! Esse é o poder da nova geração!
 ```
 
-**Como funciona:** O comando calcula a diferença entre o momento em que a mensagem foi enviada pelo usuário e o momento em que o bot a processou, exibindo o resultado em segundos.
+### Comandos de Relacionamento
+
+- `!namorar @usuario` - Enviar pedido de namoro
+- `!casar @usuario` - Casar com alguém
+- `!casais` - Ver lista de casais do grupo
+- `!trair @usuario` - Sistema de traição (brincadeira)
+- `!terminar` - Terminar relacionamento
+
+### Comandos de Administração
+
+- `!ban @usuario` - Banir membro do grupo (admin)
+- `!kick @usuario` - Remover membro do grupo (admin)
+- `!add numero` - Adicionar membro ao grupo (admin)
+- `!promover @usuario` - Promover a administrador (admin)
+- `!rebaixar @usuario` - Remover administrador (admin)
+
+### Comandos de Diversão
+
+- `!menu` - Exibir menu completo de comandos
+- `!ranking` - Ver ranking de usuários mais ativos
+- E muito mais! (+100 comandos disponíveis)
 
 ---
 
-### 2. Comando `ban`
-
-**Descrição:** Remove um membro do grupo (apenas para administradores).
-
-**Uso:**
-```
-!ban @usuario
-```
-
-Ou responda a uma mensagem do usuário com:
-```
-!ban
-```
-
-**Aliases:** `banir`, `exilar`, `exílio`, `xô`
-
-**Exemplo de Resposta:**
-```
-⚔️ SENTENÇA DE EXÍLIO ⚔️
-
-Por decreto de um general, o guerreiro @5511999999999 foi exilado deste clã.
-```
-
-**Como funciona:**
-- Verifica se o comando foi usado em um grupo.
-- Verifica se o remetente é um administrador do grupo.
-- Verifica se o bot é um administrador do grupo.
-- Identifica o alvo (por menção, resposta ou argumento).
-- Verifica se o alvo não é o dono do bot ou outro administrador.
-- Remove o usuário do grupo.
-
-**Proteções:**
-- **Selo de Imunidade:** O dono do bot não pode ser banido.
-- **Hierarquia:** Administradores não podem ser banidos.
-- **Permissões:** O comando só funciona se o bot for administrador.
-
----
-
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
-Izuko-Bot-Simplificado/
+Boruto-Uzumaki-Bot/
 ├── boruto.js                        # Arquivo principal do bot
 ├── package.json                     # Dependências e metadados
 ├── start.sh                         # Script para iniciar o bot
 ├── settings/                        # Diretório de configurações
-│   ├── settings.json                # Configurações do bot (prefixo, dono, etc.)
-│   └── token_api-shizuko.json       # Credenciais da API Shizuko
-├── banco de dados/                  # Diretório para armazenar dados
+│   ├── settings.json                # Configurações do bot
+│   ├── lib/                         # Bibliotecas de comandos
+│   │   ├── comando_namorar/         # Sistema de namoro
+│   │   ├── comando_casar/           # Sistema de casamento
+│   │   ├── comando_casais/          # Lista de casais
+│   │   ├── comando_trair/           # Sistema de traição
+│   │   ├── comando_terminar/        # Sistema de término
+│   │   ├── ranking_system/          # Sistema de ranking
+│   │   ├── sistema_bemvindo/        # Sistema de boas-vindas
+│   │   ├── sistema_casais/          # Gerenciamento de casais
+│   │   └── menus/                   # Menus do bot
+├── database/                        # Banco de dados
 │   └── ninja-qr/                    # Autenticação do WhatsApp
-├── DOCUMENTACAO.md                  # Documentação técnica completa
-└── README.md                        # Este arquivo
+└── node_modules/                    # Dependências instaladas
 ```
 
 ---
 
-## Arquivos de Configuração
+## ⚙️ Arquivos de Configuração
 
 ### `settings/settings.json`
 
@@ -118,39 +119,9 @@ Este arquivo contém as configurações principais do bot:
 - `description`: Descrição breve do bot
 - `wendelAI`: Configurações de integração com IA
 
-### `settings/token_api-shizuko.json`
-
-Este arquivo armazena as credenciais e configurações para integração com a API Shizuko:
-
-```json
-{
-  "apiKey": "SUA_API_KEY_AQUI",
-  "apiUrl": "https://api.shizuko.com",
-  "endpoints": {
-    "gpt": "/api/gpt",
-    "image": "/api/image",
-    "audio": "/api/audio",
-    "video": "/api/video"
-  },
-  "timeout": 30000,
-  "maxRetries": 3,
-  "enabled": true
-}
-```
-
-**Campos:**
-- `apiKey`: Sua chave de API do Shizuko
-- `apiUrl`: URL base da API
-- `endpoints`: Endpoints disponíveis na API
-- `timeout`: Tempo limite para requisições (em milissegundos)
-- `maxRetries`: Número máximo de tentativas em caso de falha
-- `enabled`: Define se a integração está ativa
-
-**Nota:** Para usar a API Shizuko, substitua `SUA_API_KEY_AQUI` pela sua chave real e configure `enabled: true`.
-
 ---
 
-## Requisitos
+## 📦 Requisitos
 
 - **Node.js 20.x** (obrigatório)
 - **npm** ou **yarn**
@@ -164,23 +135,28 @@ Se você não tiver o Node.js 20, baixe em: https://nodejs.org/
 
 ---
 
-## Instalação
+## 🚀 Instalação
 
-1. **Instale as dependências:**
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/Ninja28032024/Boruto-Uzumaki-Bot.git
+   cd Boruto-Uzumaki-Bot
+   ```
+
+2. **Instale as dependências:**
    ```bash
    npm install
    ```
 
-2. **Configure o bot:**
+3. **Configure o bot:**
    - Edite `settings/settings.json` para personalizar o prefixo, nome do bot e número do dono.
-   - Se for usar a API Shizuko, edite `settings/token_api-shizuko.json` com suas credenciais.
 
-3. **Inicie o bot:**
+4. **Inicie o bot:**
    ```bash
    npm start
    ```
 
-4. **Autenticação:**
+5. **Autenticação:**
    - Na primeira execução, o bot solicitará o número de telefone.
    - Digite o número no formato internacional (ex: `5528992777703`).
    - Um código de emparelhamento será exibido no terminal.
@@ -189,7 +165,7 @@ Se você não tiver o Node.js 20, baixe em: https://nodejs.org/
 
 ---
 
-## Personalização
+## 🎨 Personalização
 
 ### Alterar o Prefixo
 
@@ -207,35 +183,37 @@ Edite o arquivo `settings/settings.json` e modifique o campo `ownerNumber`:
 
 ```json
 {
-  "ownerNumber": "5511999999999"
+  "ownerNumber": "SEU_NUMERO@s.whatsapp.net"
 }
 ```
 
-**Importante:** Use apenas os dígitos do número (código do país + número), sem espaços ou caracteres especiais.
+### Ativar WendelAI
 
-### Alterar o Número do Bot
-
-Edite o arquivo `settings/settings.json` e modifique o campo `botNumber`:
+Edite o arquivo `settings/settings.json` e modifique o campo `wendelAI`:
 
 ```json
 {
-  "botNumber": "5528992777703"
+  "wendelAI": {
+    "ativo": true,
+    "fotoUrl": "https://files.catbox.moe/0ssyj3.jpg"
+  }
 }
 ```
 
-**Nota:** Este número será usado como padrão durante a autenticação inicial do bot.
+---
+
+## 📚 Dependências
+
+- **@whiskeysockets/baileys:** Biblioteca para conectar ao WhatsApp (versão customizada com suporte a LID)
+- **chalk:** Coloração de logs no terminal
+- **pino:** Sistema de logs
+- **fluent-ffmpeg:** Processamento de mídia
+- **sharp:** Processamento de imagens
+- **qrcode:** Geração de QR codes
 
 ---
 
-## Dependências
-
-- **@whiskeysockets/baileys:** Biblioteca para conectar ao WhatsApp (versão customizada com suporte a LID).
-- **chalk:** Coloração de logs no terminal.
-- **pino:** Sistema de logs.
-
----
-
-## Suporte a JID e LID
+## 🔧 Suporte a JID e LID
 
 O bot possui **suporte completo** aos dois tipos de identificadores do WhatsApp:
 
@@ -249,7 +227,7 @@ O bot detecta automaticamente qual tipo de identificador está sendo usado e tra
 
 ---
 
-## Tecnologias Utilizadas
+## 💻 Tecnologias Utilizadas
 
 - **Node.js 20.x** (JavaScript) - **OBRIGATÓRIO**
 - **Baileys** (API do WhatsApp - Fork customizado com suporte a LID)
@@ -269,18 +247,7 @@ O bot foi desenvolvido especificamente para **Node.js versão 20** e **não func
 
 ---
 
-## Funções de Tratamento de Identificadores
-
-O `boruto.js` implementa funções especializadas para lidar com ambos os formatos:
-
-- `normalizeId(id)`: Normaliza qualquer identificador para o formato correto
-- `getBotId(user)`: Extrai o ID do bot (suporta JID e LID)
-- `isSameUser(id1, id2)`: Compara dois identificadores (independente do formato)
-- `extractNumber(id)`: Extrai apenas o número de qualquer identificador
-
----
-
-## Logs e Monitoramento
+## 📊 Logs e Monitoramento
 
 O bot exibe logs coloridos no terminal para facilitar o monitoramento:
 
@@ -292,12 +259,22 @@ O bot exibe logs coloridos no terminal para facilitar o monitoramento:
 
 ---
 
-## Autor
+## 👨‍💻 Autor
 
-**Mestre Ninja Devs Of Bots**
+**Ninja Devs 🥷**
+
+Desenvolvedor: Mestre Ninja Tech</>
 
 ---
 
-## Licença
+## 📄 Licença
 
 ISC
+
+---
+
+## 🎄 Versão Especial de Natal
+
+Esta é uma versão especial lançada em **25/12/2025** com mais de **100 comandos** incluindo diversos sistemas de interação, brincadeiras e funcionalidades inovadoras!
+
+**Feliz Natal! 🎅🎁**
