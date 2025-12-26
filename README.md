@@ -21,11 +21,9 @@ Esta é uma versão especial de natal do Boruto Uzumaki Bot, contendo Diversos c
 
 **Exemplo de Resposta:**
 ```
-🏓 PONG!
+*[PING] Latência: 1.131s*
 
-⏱️ Latência: 0.234 segundos
-🤖 Bot: Izuko Bot
-📦 Versão: 3.1.0
+Viu só? Rápido como um raio! Esse é o poder da nova geração!
 ```
 
 **Como funciona:** O comando calcula a diferença entre o momento em que a mensagem foi enviada pelo usuário e o momento em que o bot a processou, exibindo o resultado em segundos.
