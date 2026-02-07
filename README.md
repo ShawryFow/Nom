@@ -2,7 +2,7 @@
 
 # ⚡ Boruto Uzumaki Bot ⚡
 
-### Bot WhatsApp Multifuncional com +100 Comandos incluindo Brincadeiras
+### Bot de WhatsApp Multifuncional com +150 comandos incluindo Brincadeiras
 
 [![Node.js](https://files.catbox.moe/iz2w5w.jpeg)](https://nodejs.org/)
 [![Baileys](https://img.shields.io/badge/Baileys-Latest-blue.svg)](https://github.com/WhiskeySockets/Baileys)
