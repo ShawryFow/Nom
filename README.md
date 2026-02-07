@@ -30,7 +30,7 @@
 
 ---
 
-## 🚀 Instalação
+## 🚀 Comandos de Instalação
 
 ### 📱 INSTALAÇÃO PARA TERMUX
 
