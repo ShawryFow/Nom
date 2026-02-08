@@ -1,9 +1,12 @@
 {
   "name": "Boruto Bot",
-  "version": "2.2",
-  "status": "Atualização [08/02/2026] [14:48] para V2.2",
-  "description": "Bot WhatsApp MultiFuncional Com diversos comandos e sistemas. Compatível com Node.js20+ e Termux. Atualização [08/02/2026] [14:48] para V2.2",
+  "version": "2",
+  "description": "Bot WhatsApp MultiFuncional Com diversos comandos e sistemas. Compatível com Node.js 14+ e Termux.",
   "main": "boruto.js",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
   "scripts": {
     "start": "node boruto.js",
     "test": "node boruto.js"
@@ -19,5 +22,20 @@
     "wa-sticker-formatter": "^4.4.4"
   },
   "author": "Mestre Ninja Devs Of Bots",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "nodejs",
+    "multifuncional"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/boruto-bot"
+  },
+  "bugs": {
+    "url": "https://github.com/seu-usuario/boruto-bot/issues"
+  },
+  "homepage": "https://github.com/seu-usuario/boruto-bot#readme"
 }
