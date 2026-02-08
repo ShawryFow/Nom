@@ -13,7 +13,8 @@ while :
 do
 echo "${CYAN} 
  💧 ESTOU INICIANDO MESTRE AGUARDE... AUTO CONEXÃO ATIVADO 
- PARA ENVITAR OS ERROS DO BOT AGUARDE᭄......"
+ PARA ENVITAR OS ERROS DO BOT AGUARDE᭄...... 
+ [STATUS] Atualização [08/02/2026] [14:48] para V2.2"
 node boruto.js 
 sleep 1      
 done
