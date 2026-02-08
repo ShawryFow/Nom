@@ -14,7 +14,7 @@ do
 echo "${CYAN} 
  💧 ESTOU INICIANDO MESTRE AGUARDE... AUTO CONEXÃO ATIVADO 
  PARA ENVITAR OS ERROS DO BOT AGUARDE᭄...... 
- [STATUS] Atualização [08/02/2026] [14:48] para V2.2"
+ [STATUS] Atualização [08/02/2026] [17:28] para V2.3"
 node boruto.js 
 sleep 1      
 done
